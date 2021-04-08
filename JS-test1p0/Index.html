@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi pagina JavaScript</title>
+</head>
+<body>
+
+	<script type="text/javascript"> <!--  esta línea siempre debe ir en la parte inferior dentro de body-->
+		var nombre = "Jesus";
+		console.log(nombre);
+
+		console.log("Aqui esta un texto en consola");
+		var frutas = ["Manzana", "Pera", "Fresa"];
+		var canasta = [];
+		console.log(frutas);
+		var edad=20;
+		if(edad>=18){
+			console.log("Eres mayo de edad")
+		}
+		else{
+			console.log("Eres menor de edad");
+		}
+
+		switch(edad){
+			case 20: console.log("Eres mayo de edad"); break;
+			default:
+			console.log("No hay valor para esa edad");
+		}
+
+		var verdura = {
+			nombre: "Zanahoria", peso: 300, unidad: "gramos"
+		};
+
+		for(propiedad in verdura){ 
+			console.log("La propiedad es: " + propiedad +" "+ verdura[propiedad]);
+		}
+
+		var cont = 0;
+		while(cont<100){
+			console.log(cont);
+			cont++;
+
+		}
+
+		cont = 0;
+		do{
+			cont = 1;
+			console.log("Solo una vez");
+
+		}while(cont == 0);
+
+		function suma(numero1,numero2){
+			console.log(numero1+numero2);
+		}
+
+		suma(5,2);
+
+		function resta(numero1,numero2){
+			console.log(numero1-numero2);
+		}
+
+		resta(7,3);
+
+		function multiplicacion(numero1,numero2){
+			console.log(numero1*numero2);
+		}
+
+		multiplicacion(5,3);
+
+		function division(numero1,numero2){
+			console.log(numero1/numero2);
+		}
+
+		division(15,3);
+
+		function llenaCanasta(){
+			for(i =0; i<10; i++){
+				numero = Math.floor(Math.random() * frutas.length);
+				canasta.push(frutas[numero]);
+			}
+		}
+
+
+	</script>
+
+</body>
+</html>

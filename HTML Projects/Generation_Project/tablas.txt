@@ -1,0 +1,34 @@
+****usuario****
+nombre(completo)
+usuario
+sexo
+contraseña
+fecha de nacimiento
+correo
+telefono
+
+create table usuario (id_usuario int not null auto_increment, nombre varchar(30), apellidoP varchar(30), apellidoM varchar(30), negocio varchar(50), sexo varchar(10), nacimiento date, email varchar(50), user varchar(30), password varchar(30));
+
+********Datos/Negocio********
+Nombre
+direccion
+telefono
+correo
+RFC
+Imagen
+Horario
+giro
+rango precios
+////////////////////////////////////
+*****comentario********
+nombre
+comentario
+calificaciion
+///////////////////////////
+Buscar por direccion(pagina de inicio)
+////////////////////////
+	$(".card-grid").flip({trigger: 'hover'});
+
+	<!-- Implementacion de los script de JQUERY-->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>

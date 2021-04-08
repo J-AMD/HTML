@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ejemplos de colores</title>
+	<style type="text/css">
+		body{
+			color: white;
+		}
+		
+		div{
+		background-color: red;
+		width: 50px;
+		margin: 8px; 
+		}
+		p{
+			background-color: blue;
+			width: 200px;
+		}
+
+		.tecnologia { /*agregando esta clase los elemetos selectores de ID cambian su tamaño (java,html,css y javascript)*/
+			width: 100px;
+			height: 100px;
+
+		}
+
+		.vocal{                   /* se accede a la clase por medio de .vocal*/
+			font-size: 20px;                                             /**/
+			font-weight: bold;											/**/
+		}																/**/
+		.consonante{													/**/
+			font-size: 18px;											/**/
+			font-weight: italic;										/**/
+		}							/*el mismo caso para .consonante*/
+
+		.palabra-reservada {                /*clase para modificar el estilo de plabras reservadas*/
+			color: blue;
+			width: 250px; /*reduce el borde o cuadro al tamaño seleccionado*/
+			padding: 8px; /*da espacio entre cada palabra reservada*/
+			font-family: 'Arial';
+			border: 3px solid #f00;          /*border parameters (ancho, tipo, color)*/
+		}
+
+		.tipo-dato {
+			text-decoration: underline;
+		}
+
+		.estructura-control {
+			text-align: center;
+		}
+
+		.poo {
+			background-color: pink;
+		}
+
+		.palabra-reservada div { /*modifica la ultima palabra reservada class*/
+			width: 200px;
+		}
+
+		.palabra-reservada p.instruccion-incorrecta {/*noGenera problemas por clase repetida por ser mas especifica con p.*/
+			color: red;
+			font-weight: bold;
+			font-size: 18px;
+			width: 200px;
+		}
+
+		/*Selectores #java el simbolo # indica que hace refencia al ID*/
+		#java {
+			background-color: white;
+			color: red;
+		}
+
+		#html {
+			background-color: orange;
+			color: white;
+		}
+
+		#css {
+			background-color: blue;
+			color: white;
+		}
+
+		#javascript {
+			background-color: yellow;
+			color: black;
+		}
+	</style>
+
+</head>
+<body>
+	<div style="background: red;">1</div>
+	<div style="background: blue">2</div>
+	<div>3</div>
+
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+
+	<div class="vocal">A</div>
+	<div class="consonante">B</div>
+	<div class="consonante">C</div>
+	<div class="consonante">D</div>
+	<div class="vocal">E</div>
+
+	<!--personaisamos a traves del atributo ID-->
+	<div class="tecnologia" id="java">Java</div>
+	<div class="tecnologia" id="html">HTML</div>
+	<div class="tecnologia" id="css">CSS</div>
+	<div class="tecnologia" id="javascript">JavaScript</div>
+
+	<!--les daremos estilo a las siguientes palabras reservadas por medio de la clase .palabra-reservada de arriba-->
+	<h4 class="palabra-reservada tipo-dato">int</h4>
+	<h4 class="palabra-reservada tipo-dato">short</h4> <!-- para dar formato diferente solo agregamos otraClase con otras-->
+	<h4 class="palabra-reservada tipo-dato">boolean</h4> <!-- propiedades                                                -->
+	<h4 class="palabra-reservada tipo-dato">float</h4>
+	<h4 class="palabra-reservada tipo-dato">double</h4>
+	<h4 class="palabra-reservada tipo-dato">char</h4>
+	<h4 class="palabra-reservada estructura-control">byte</h4>
+	<h4 class="palabra-reservada estructura-control">break</h4>
+	<h4 class="palabra-reservada ">for</h4>
+	<h4 class="palabra-reservada">while</h4> 
+	<h4 class="palabra-reservada">do</h4>
+	<h4 class="palabra-reservada estructura-control">if</h4>
+	<h4 class="palabra-reservada estructura-control">else</h4>
+	<h4 class="palabra-reservada estructura-control">switch</h4>
+	<h4 class="palabra-reservada estructura-control">case</h4>
+	<h4 class="palabra-reservada">default</h4>
+	<h4 class="palabra-reservada">void</h4>
+	<h4 class="palabra-reservada">new</h4>
+	<h4 class="palabra-reservada">static</h4>
+	<h4 class="palabra-reservada estructura-control">final</h4>
+	<h4 class="palabra-reservada poo">public</h4>
+	<h4 class="palabra-reservada poo">private</h4>
+	<h4 class="palabra-reservada poo">protected</h4>
+	<h4 class="palabra-reservada poo">class  <!-- le agregamos un div para modificar formato dentro del recuadro-->
+		<div class="instruccion">int 1numero='';</div>
+		<p class="instruccion-incorrecta">int 2numero='';</p>
+	</h4>
+</body>
+</html>

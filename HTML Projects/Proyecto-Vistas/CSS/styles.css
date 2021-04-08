@@ -1,0 +1,41 @@
+body{
+	font-family: arial;
+}
+.site-header{
+	background: url(../Imagenes/pasto.jpg);
+	background-position: center;
+	background-size: 160px;
+	border-bottom: 3px solid black;
+}
+.centrar{
+	text-align: center;
+}
+
+.imgNegocio{
+	width: 200px;
+	height: 200px;
+}
+
+.btnTitulo a {
+	text-align: right;
+	margin-right: 20px;
+	color: black;
+}
+
+.contorno{
+	border: 2px solid gray;
+}
+/*                               Selectores*/
+
+.fuente{
+	font-family: arial;
+	color: black;
+}
+#titulo{
+	padding-top: 10px;
+	margin-left: 30px;
+	text-align: left;
+	color: black;
+}
+
+

@@ -1,0 +1,33 @@
+
+
+
+{ "agencia": "AvPatria",
+  "sucursal": 12,
+  "empleados":
+  [
+  	{
+  		"nombre": "Carlo",
+  		"edad": 24,
+  		"genero": "M",
+  		"puesto": "Manager",
+  		"activo": true
+  	},
+  	{
+  		"nombre": "Felipe",
+  		"edad": 24,
+  		"genero": "M",
+  		"puesto": "Chalange",
+  		"activo": false
+  	}
+  ],
+  "vehiculos":
+  [
+		{
+			"marca": "Ford",
+			"modelo": "LOBO",
+			"color": "Rojo",
+			"placa": "JLK-1548"
+		}
+  ]
+
+}
